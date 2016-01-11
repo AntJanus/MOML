@@ -20,7 +20,7 @@ A great way to illustrate why one might need MOML is by looking at a common usec
 
 Jekyll, a popular blogging engine, proposes to solve this by using front matter in combination with YAML like so:
 
-```jekyll
+```markdown
 ---
 title: My post title
 date: 2016-1-11
@@ -117,7 +117,7 @@ Caveat: Redeclaring a variable will result in it being overwritten unless it's a
 
 Multiple variable declarations are separated by three dashes or more (depending on your style) like so:
 
-```
+```markdown
 myVar: This is my variable
 ---
 yourVar: This is your variable
@@ -125,7 +125,7 @@ yourVar: This is your variable
 
 The following is also legal:
 
-```
+```markdown
 myVar: This is my variable
 ---------------------------------------------------
 yourVar: This is your variable
@@ -135,7 +135,7 @@ yourVar: This is your variable
 
 The ability to store repeated values such as image paths for a slideshow. To differentiate a simple variable from an array, add array brackets to the variable name. Each redeclaration of that array name will add another element into the resulting array like so:
 
-```
+```markdown
 myVar: this is a plain variable
 ---
 myArray[]: This is an array
@@ -151,7 +151,7 @@ The [current implementation of the spec](https://github.com/AntJanus/popstar-fil
 
 Here's an example:
 
-```
+```markdown
 title: Test
 ---
 tags[]: my tag
@@ -165,7 +165,7 @@ My content
 
 Gets translated into:
 
-```
+```javascript
 {
   title: "Test",
   tags: [
