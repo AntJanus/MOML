@@ -178,7 +178,7 @@ Gets translated into:
 
 ## To do and ideas
 
-- [ ] support for typing and/or type parsing like so: `string myType: value` or (using custom compilers) `markdown myContent: content` as well as `script myScript: script`
+- [ ] support for typing and/or type parsing like so: `string myType: value` or (using custom compilers) `markdown myContent: content` as well as `script myScript: script` which would create: `{ myType: { type: 'string', value: 'value' } }`, `{ myContent: { type: 'markdown', value: 'content' } }`, and `{ myScript: { type: 'script', value: 'script' } }` respectivelly.
 - [ ] short-form arrays using dash delimiters like so (how to indicate short-form use?):
 ```
 myArray[]:
