@@ -176,13 +176,45 @@ Gets translated into:
 }
 ```
 
-## To Do
+## To do and ideas
 
 - [ ] support for typing and/or type parsing like so: `string myType: value` or (using custom compilers) `markdown myContent: content` as well as `script myScript: script`
-- [ ] short-form arrays using dash delimiters like so:
+- [ ] short-form arrays using dash delimiters like so (how to indicate short-form use?):
 ```
 myArray[]:
 
 - first element
 - second element
+```
+- [ ] comments after multiple variable delimiter like so:
+```
+---- //metadata
+title: something
+----
+tags[]: my tag
+----
+tags[]: your tag
+---- //content
+content
+```
+
+- [ ] deep object structure (should it be `.` or `:` delimited?):
+```
+myObj.test:
+--- // or
+myObj:test:
+```
+
+multiple nesting would require additional delimiter syntax:
+
+```
+myObj:
+:first_val:
+
+My val
+
+:second_val:
+
+My second val
+
 ```
