@@ -85,7 +85,7 @@ sections[]:
 
 ## Usage
 
-MOML is pretty simple and straightforward. Checkout the [implementation](https://github.com/AntJanus/popstar-file-reader/blob/master/src/parser.es6).
+MOML is pretty simple and straightforward. Checkout the [implementation](https://github.com/AntJanus/MOML-parser).
 
 MOML at its heart wants to allow your metadata to live alongside your document's contents and be treated with the same priority as the content itself, having to endure to limitatition or tabbing in order to achieve some kind of structure. MOML also strives to avoid XML and the likes as they still require indenting for legibility. MOML is Markdown-first and friendly.
 
