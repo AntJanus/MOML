@@ -145,6 +145,18 @@ myArray[]: This is the second element (or myArray[1]) in the array
 myArray[]: Yet another
 ```
 
+## Reserved Namespaces
+
+MOML has a few namespaces that will still parse into the object but the parser makes certain assumptions about the values.
+
+Currently, only one such field exists called `is-moml` whose value should always be set to `true` like so:
+
+```
+is-moml: true
+```
+
+It *has* to appear at the end of the file and is used to detect if the current file follows the MOML spec. A parser will have a method that can identify a string as MOML format.
+
 ## Output
 
 The [current implementation of the spec](https://github.com/AntJanus/popstar-file-reader/blob/master/src/parser.es6) will generate a Javascript object from MOML.
